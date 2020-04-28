@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 const faker = require('faker');
 
-context('basic interactions scenarios', () => {
+context('basic interactions scenarios 1', () => {
     const employeeName = faker.name.findName()
     const employeeEmail = faker.internet.email()
 
@@ -23,7 +23,7 @@ context('basic interactions scenarios', () => {
         cy.contains('Employee successfully added')
     })
 
-    it.only('stub response', () => {
+    it('stub response', () => {
         let mockUser = [
             {
                 "id": 1,
