@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 const faker = require('faker');
 
-context('basic interactions scenarios', () => {
+context('basic interactions scenarios 1', () => {
     const employeeName = faker.name.findName()
     const employeeEmail = faker.internet.email()
 
